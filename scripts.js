@@ -20,7 +20,7 @@ const initialTasks = [
         "Gain practical experience and collaborate with others in the software development community",
       status: "done",
     },
-];
+]; 
 
 //Add an event on click of the button
 addTaskBtn.addEventListener('click', function() {
@@ -58,7 +58,8 @@ addTaskBtn.addEventListener('click', function() {
       alert("There are enough tasks on your board, please check them in the console");
     }
 
-    console.log("All tasks: " + initialTasks);
+    console.log("All tasks: ");
+    console.log(initialTasks);
     FilterTasks();
 });
 
@@ -66,5 +67,6 @@ addTaskBtn.addEventListener('click', function() {
 function FilterTasks() {
 
     const doneTasks = initialTasks.filter(task => task.status === "done");
-    console.log("Completed Tasks: " + doneTasks);
+    console.log("Completed Tasks: ");
+    console.log(doneTasks);
 }
