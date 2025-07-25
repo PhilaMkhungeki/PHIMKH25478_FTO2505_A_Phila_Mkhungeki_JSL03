@@ -24,7 +24,7 @@ const initialTasks = [
 
 //Add an event on click of the button
 addTaskBtn.addEventListener('click', function() {
-
+    
     const taskTitle = prompt("Enter task title:");
     const taskDescription = prompt("Enter task description:");
     let taskStatus = prompt(
@@ -42,7 +42,24 @@ addTaskBtn.addEventListener('click', function() {
       ).toLowerCase();
     }
 
-   
+    //set each task to have a unique id that increments from the last existing task
+    let lastTask = initialTasks[initialTasks.length - 1];
+    let newId = lastTask.id + 1;
+
+    // Store the task to the existing array
+    initialTasks.push({
+        id: newId,
+        title: taskTitle,
+        description: taskDescription,
+        status: taskStatus.toLowerCase()
+    });
+
+    if(initialTasks.length === 6){
+      alert("There are enough tasks on your board, please check them in the console");
+    }
+
+    console.log("All tasks: " + initialTasks);
+    FilterTasks();
 });
 
 // Function to check tasks that are "done"
