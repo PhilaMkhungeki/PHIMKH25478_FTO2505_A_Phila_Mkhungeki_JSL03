@@ -2,8 +2,8 @@
 
 ## Important Prerequisite
 
-1. Before starting this challenge, make sure you have reviewed and corrected your JSL02 project using the provided solution. Your prompts for entering task details should be fully functional and include proper validation checks to ensure accurate user input.
-2. **Check the project user stories in your student dashboard**, make sure you understand what is required for each feature.
+1. Reviewed and corrected JSL02 project using the provided solution.
+2. Checked the project user stories in the student dashboard to make sure I understand what is required for each feature.
 
 ## Overview
 
@@ -11,27 +11,31 @@ This project involves creating a **simple task management system** where users c
 
 ## Key Objectives
 
+## Technologies used
+
+- HTML, CSS & JAVASCRIPT
+
 ### Logic & User Interaction
 
-- Store tasks as **objects inside an array** for structured data management.
-- Allow users to **add up to three new tasks** to the existing task list.
-- Ensure each new task has a **unique incremental ID** based on the last task in the array.
+- Stored tasks as **objects inside an array** for structured data management.
+- Allow users to **add up to three new tasks** to the existing task list through the "+Add New Task" button.
 - Prompt users to enter **task details (title, description, status)** and store them in an object.
-- Alert users when they reach the task limit with the message:
+- Increments each new task's ID from the last task in the array.
+- Users get an alert message when they reach the task limit with the message:
   _"There are enough tasks on your board, please check them in the console."_
-  Implement a **filter function** to display only tasks with the status `"done"`.
-- Log **all tasks** in the console with a clear label for easy review.
-- Log **only completed tasks** (status: `"done"`) in the console under a "Completed Tasks" label for quick reference.
+  Implemented a **filter function** to display only tasks with the status "done".
+- Log **all tasks** in the console with a clear label of "All tasks"  for easy review.
+-Completed tasks with status: "done" get logged in the console under a "Completed Tasks" label.
 
 ## Code Quality & Maintainability
 
-- Use meaningful variable and function names to ensure readability and maintainability.
-- Follow consistent indentation and formatting to enhance code clarity.
-- Include comments explaining key logic and functionality to support future modifications.
+- Used meaningful variable and function names to ensure readability and maintainability.
+- Followed consistent indentation and formatting to enhance code clarity.
+- Included comments explaining key logic and functionality to support future modifications.
 
 ## Expected Outcome
 
-A **structured and limited task management system** that enables users to add, review, and filter tasks efficiently while ensuring **clean, well-documented, and maintainable code.**
+A **structured and limited task management system** that enables users to add, review, and filter tasks efficiently while ensuring.
 
 **Console Log of all and completed tasks**
 
